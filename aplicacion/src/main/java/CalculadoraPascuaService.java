@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 
 @Service
-public class CalculadoraPascuaService implements ICalculadoraPascuaServicio {
-
+public class CalculadoraPascuaService implements servicios.ICalculadoraPascuaServicio {
+    
     @Override
-    public LocalDate calcularDomingoPascua(int anio) {
+    public LocalDate calcularDomingoPascua(int año) {
         int a = anio % 19;
         int b = anio % 4;
         int c = anio % 7;
@@ -23,8 +23,8 @@ public class CalculadoraPascuaService implements ICalculadoraPascuaServicio {
         return domingoRamos.plusDays(7);
     }
 
-    @Override
-    public boolean validarAnio(int anio) {
+     @Override
+    public boolean validarAño(int año) {
         return anio >= 1900 && anio <= 2100;
     }
 }

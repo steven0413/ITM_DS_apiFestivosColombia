@@ -20,7 +20,7 @@ public interface IFestivoCalculatorServicio {
     LocalDate calcularFechaFestivo(Festivo festivo, int anio);
     
     /**
-     * Ajusta una fecha al siguiente lunes (Ley de Puente Festivo)
+     * Ajusta una fecha al siguiente lunes 
      * 
      * @param fecha Fecha original
      * @return Fecha ajustada al siguiente lunes

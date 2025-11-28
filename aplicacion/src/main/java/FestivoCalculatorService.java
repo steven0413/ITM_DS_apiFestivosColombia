@@ -9,11 +9,11 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 @Service
-public class FestivoCalculatorService implements IFestivoCalculatorServicio {
+public class FestivoCalculatorService {
 
-    private final ICalculadoraPascuaServicio calculadoraPascua;
-
-    public FestivoCalculatorService(ICalculadoraPascuaServicio calculadoraPascua) {
+    private final servicios.ICalculadoraPascuaServicio calculadoraPascua;
+    
+    public FestivoCalculatorService(servicios.ICalculadoraPascuaServicio calculadoraPascua) {
         this.calculadoraPascua = calculadoraPascua;
     }
 
